@@ -1,0 +1,9 @@
+sudo docker ps -a
+Script started on 2021-11-19 21:15:10+02:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="211" LINES="63"]
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED       STATUS                   PORTS     NAMES
+5b8731de8533   nginx     "/docker-entrypoint.…"   2 hours ago   Exited (0) 2 hours ago             naughty_bhaskara
+9eccf9b8d967   nginx     "/docker-entrypoint.…"   2 hours ago   Exited (0) 2 hours ago             youthful_brown
+16aeefeb514e   nginx     "/docker-entrypoint.…"   2 hours ago   Up 2 hours               80/tcp    lucid_kare
+
+Script done on 2021-11-19 21:15:15+02:00 [COMMAND_EXIT_CODE="0"]
