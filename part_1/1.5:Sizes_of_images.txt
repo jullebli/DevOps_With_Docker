@@ -1,0 +1,4 @@
+devopsdockeruh/simple-web-service   ubuntu    4e3362e907d5   8 months ago   83MB
+devopsdockeruh/simple-web-service   alpine    fd312adc88e0   8 months ago   15.7MB
+
+Alpine tagged image is much smaller than ubuntu tagged image. The hidden message could be seen by running command "sudo docker exec -it alpine3 tail -f ./text.log" in terminal.
