@@ -1,0 +1,2 @@
+bergmjul@lx0-fuxi243:~$ sudo docker build . -t exercise:curler
+bergmjul@lx0-fuxi243:~$ sudo docker run -it --rm exercise:curler
