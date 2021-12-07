@@ -1,0 +1,2 @@
+bergmjul@lx0-fuxi243:~$ touch mytext.log
+bergmjul@lx0-fuxi243:~$ sudo docker run -v $(pwd)/mytext.log:/usr/src/app/text.log devopsdockeruh/simple-web-service
