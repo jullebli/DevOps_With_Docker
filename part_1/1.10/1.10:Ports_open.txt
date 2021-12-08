@@ -1,0 +1,5 @@
+# when there exists a build image with name hello, tagged web-service (as in exercise 1.7)
+bergmjul@lx0-fuxi243:~$ sudo docker run -p 8080:8080 hello:web-service
+
+On site localhost:8080:
+{"message":"You connected to the following path: /","path":"/"}
