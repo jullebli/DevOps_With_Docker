@@ -1,0 +1,14 @@
+# Build frontend in terminal tab 1
+bergmjul@lx0-fuxi243:~/example-frontend$ sudo docker build . -t frontend
+
+# Build backend in terminal tab 2
+bergmjul@lx0-fuxi243:~/example-backend$ sudo docker build -t backend .
+
+# Run frontend in terminal tab 1
+bergmjul@lx0-fuxi243:~/example-frontend$ sudo docker run -it --rm -p 5000:5000 frontend
+
+# Run backend in terminal tab 2
+bergmjul@lx0-fuxi243:~/example-backend$ sudo docker run -it -p 8080:8080 --rm backend
+
+# Go to http://localhost:5000 and press Press to test-button. Text "Success! Great job!" appears
+# Works in same terminal tab if run -d is used
