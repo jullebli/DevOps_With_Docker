@@ -1,0 +1,4 @@
+bergmjul@lx0-fuxi243:~$ sudo docker build -t golang-app .
+bergmjul@lx0-fuxi243:~$ sudo docker run -it -p 8080:8080 --rm --name my-running-app golang-app
+
+And then navigate to http://localhost:8080/ping to find the pong.
