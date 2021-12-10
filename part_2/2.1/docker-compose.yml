@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+    simple-web-service-ubuntu:
+        image: devopsdockeruh/simple-web-service
+        volumes:
+         - ./text.log:/usr/src/app/text.log
+         
+#sudo docker-compose up. Must have before text.log in the same repository as docker-compose.yml
