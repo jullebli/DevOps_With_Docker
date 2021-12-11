@@ -1,0 +1,3 @@
+bergmjul@lx0-fuxi243:~$ sudo docker-compose up --scale compute=2
+
+# works with just 2, but if you increment it then the solution will be found faster but not instantly. Even if you put compute=50 the calculating is not very fast (not like instant) it still takes couple of seconds. I guess since calculating takes 3-4 seconds then that is the minimum amount of time that will be spend in calculating.
