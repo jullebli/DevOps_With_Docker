@@ -1,0 +1,23 @@
+version: '3.3'
+
+services:
+    frontend:
+        build: ../../part_1/1.14/example-frontend/    
+        environment:
+            - REACT_APP_BACKEND_URL=http://localhost:8080
+        ports:
+            - 5000:5000
+        
+    backend:
+        build: ../../part_1/1.14/example-backend/
+        environment:
+            - REQUEST_ORIGIN=http://localhost:5000
+            - REDIS_HOST=redis
+        ports:
+            - 8080:8080
+            
+    redis:
+        image: redis
+
+# example-frontend and example-backend in the part_1/1.14/ repository. There are Dockerfiles also in each example, but they are not visible in Github (added to .gitignore or .dockerignore etc)
+# sudo docker-compose up
