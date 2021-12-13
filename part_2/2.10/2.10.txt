@@ -1,0 +1,3 @@
+I made sure that buttons worked before starting exercise 2.9 since it needed the message buttons to work. I had forgotten to remove some envs from both Dockerfiles.
+
+And all buttons worked before and after exercise 2.9. Exercise 2.8 has two git commits, first where only one button works and second where all of them work. They have clear distinctive commit messages.
