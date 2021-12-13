@@ -33,8 +33,6 @@ services:
         container_name: db_backend
         networks:
             - first-network
-            
-            ##PGDATA: ./data?
         
     proxy:
         image: nginx
@@ -43,7 +41,6 @@ services:
             - NGINX_HOST=http://localhost
             - NGINX_PORT=80
         volumes:
-           # - ./templates:/etc/nginx/templates
             - ./nginx.conf:/etc/nginx/nginx.conf
         ports:
             - "80:80"
@@ -58,6 +55,6 @@ networks:
     first-network:
         name: nginx-network
 
-# example-frontend and example-backend in the part_1/1.14/ repository. There are Dockerfiles also in each example, but they are not visible in Github (added to .gitignore or .dockerignore etc)
-# sudo docker-compose up. Button  worked/turned green  were not working. Messages did not work.
+# There are Dockerfiles also in each example, but they are not visible in Github (added to .gitignore or .dockerignore etc)
+# sudo docker-compose up.
 

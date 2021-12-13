@@ -44,7 +44,6 @@ services:
             - NGINX_HOST=http://localhost
             - NGINX_PORT=80
         volumes:
-           # - ./templates:/etc/nginx/templates
             - ./nginx.conf:/etc/nginx/nginx.conf
         ports:
             - "80:80"
@@ -59,6 +58,6 @@ networks:
     first-network:
         name: nginx-network
 
-# example-frontend and example-backend in the part_1/2.8/ repository. 
-# sudo docker-compose up. Button  worked/turned green  were not working. Messages did not work.
+# example-frontend and example-backend in the part_2/2.8/ repository. 
+# sudo docker-compose up.
 
